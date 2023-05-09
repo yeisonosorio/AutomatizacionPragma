@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Compras en pagina de pruebas" skipped="0" tests="1" time="25.74" timestamp="2023-05-09 02:38:33"><testcase name="Agregar un producto al carrito"><failure message="&#10;Expected: &quot;$500.00&quot;&#10;     but: was &quot;$602.00&quot;" type="java.lang.AssertionError">
+Expected: "$500.00"
+     but: was "$602.00"</failure><system-err>
+Expected: "$500.00"
+     but: was "$602.00"&#13;
+com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDelProducto(AgregarProductosStepDefinitions.java:73)&#13;
+✽.el usuario debe ver el valor del producto "$500.00"(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:17)&#13;
+</system-err></testcase></testsuite>

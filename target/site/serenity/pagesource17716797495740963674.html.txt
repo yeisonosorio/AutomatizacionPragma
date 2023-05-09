@@ -1,0 +1,535 @@
+<html dir="ltr" lang="en"><!--<![endif]--><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Laptops &amp; Notebooks</title>
+<base href="http://opencart.abstracta.us:80/">
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css">
+<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+<link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
+<link href="catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen">
+<script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<link href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18" rel="canonical">
+<link href="http://opencart.abstracta.us:80/image/catalog/cart.png" rel="icon">
+</head>
+<body>
+<nav id="top">
+  <div class="container"><div class="pull-left">
+  <form action="http://opencart.abstracta.us:80/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="form-currency">
+    <div class="btn-group">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">                               <strong>$</strong>        <span class="hidden-xs hidden-sm hidden-md">Currency</span>&nbsp;<i class="fa fa-caret-down"></i></button>
+      <ul class="dropdown-menu">
+                        <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+        </li>
+                                <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
+        </li>
+                                <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+        </li>
+                      </ul>
+    </div>
+    <input type="hidden" name="code" value="">
+    <input type="hidden" name="redirect" value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18">
+  </form>
+</div>
+ 
+    
+    <div id="top-links" class="nav pull-right">
+      <ul class="list-inline">
+        <li><a href="http://opencart.abstracta.us:80/index.php?route=information/contact"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">123456789</span></li>
+        <li class="dropdown"><a href="https://opencart.abstracta.us:443/index.php?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="https://opencart.abstracta.us:443/index.php?route=account/register">Register</a></li>
+            <li><a href="https://opencart.abstracta.us:443/index.php?route=account/login">Login</a></li>
+                      </ul>
+        </li>
+        <li><a href="https://opencart.abstracta.us:443/index.php?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md">Wish List (0)</span></a></li>
+        <li><a href="http://opencart.abstracta.us:80/index.php?route=checkout/cart" title="Shopping Cart"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Shopping Cart</span></a></li>
+        <li><a href="https://opencart.abstracta.us:443/index.php?route=checkout/checkout" title="Checkout"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md">Checkout</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="logo">          <h1><a href="http://opencart.abstracta.us:80/index.php?route=common/home">Your Store</a></h1>
+          </div>
+      </div>
+      <div class="col-sm-5"><div id="search" class="input-group">
+  <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg">
+  <span class="input-group-btn">
+    <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+  </span>
+</div></div>
+      <div class="col-sm-3"><div id="cart" class="btn-group btn-block">
+  <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><span id="cart-total"><i class="fa fa-shopping-cart"></i> 2 item(s) - $3,202.00</span></button>
+  <ul class="dropdown-menu pull-right"><li>
+      <table class="table table-striped">
+                <tbody><tr>
+          <td class="text-center"> <a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;product_id=44"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/macbook_air_1-47x47.jpg" alt="MacBook Air" title="MacBook Air" class="img-thumbnail"></a> </td>
+          <td class="text-left"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;product_id=44">MacBook Air</a>             </td>
+          <td class="text-right">x 1</td>
+          <td class="text-right">$1,202.00</td>
+          <td class="text-center"><button type="button" onclick="cart.remove('205473');" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+        </tr>
+                <tr>
+          <td class="text-center"> <a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;product_id=45"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/macbook_pro_1-47x47.jpg" alt="MacBook Pro" title="MacBook Pro" class="img-thumbnail"></a> </td>
+          <td class="text-left"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;product_id=45">MacBook Pro</a>             </td>
+          <td class="text-right">x 1</td>
+          <td class="text-right">$2,000.00</td>
+          <td class="text-center"><button type="button" onclick="cart.remove('205474');" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+        </tr>
+                      </tbody></table>
+    </li><li>
+      <div>
+        <table class="table table-bordered">
+                    <tbody><tr>
+            <td class="text-right"><strong>Sub-Total</strong></td>
+            <td class="text-right">$3,000.00</td>
+          </tr>
+                    <tr>
+            <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+            <td class="text-right">$2.00</td>
+          </tr>
+                    <tr>
+            <td class="text-right"><strong>VAT (20%)</strong></td>
+            <td class="text-right">$200.00</td>
+          </tr>
+                    <tr>
+            <td class="text-right"><strong>Total</strong></td>
+            <td class="text-right">$3,202.00</td>
+          </tr>
+                  </tbody></table>
+        <p class="text-right"><a href="http://opencart.abstracta.us:80/index.php?route=checkout/cart"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a>&nbsp;&nbsp;&nbsp;<a href="https://opencart.abstracta.us:443/index.php?route=checkout/checkout"><strong><i class="fa fa-share"></i> Checkout</strong></a></p>
+      </div>
+    </li></ul>
+</div>
+</div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <nav id="menu" class="navbar">
+    <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+                        <li class="dropdown"><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=20" class="dropdown-toggle" data-toggle="dropdown">Desktops</a>
+          <div class="dropdown-menu" style="">
+            <div class="dropdown-inner">               <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=20_26">PC (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=20_27">Mac (1)</a></li>
+                              </ul>
+              </div>
+            <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=20" class="see-all">Show All Desktops</a> </div>
+        </li>
+                                <li class="dropdown"><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18" class="dropdown-toggle" data-toggle="dropdown">Laptops &amp; Notebooks</a>
+          <div class="dropdown-menu" style="">
+            <div class="dropdown-inner">               <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_46">Macs (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_45">Windows (0)</a></li>
+                              </ul>
+              </div>
+            <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18" class="see-all">Show All Laptops &amp; Notebooks</a> </div>
+        </li>
+                                <li class="dropdown"><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25" class="dropdown-toggle" data-toggle="dropdown">Components</a>
+          <div class="dropdown-menu" style="">
+            <div class="dropdown-inner">               <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25_29">Mice and Trackballs (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25_28">Monitors (2)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25_30">Printers (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25_31">Scanners (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25_32">Web Cameras (0)</a></li>
+                              </ul>
+              </div>
+            <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25" class="see-all">Show All Components</a> </div>
+        </li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=57">Tablets</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=17">Software</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=24">Phones &amp; PDAs</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=33">Cameras</a></li>
+                                <li class="dropdown"><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34" class="dropdown-toggle" data-toggle="dropdown">MP3 Players</a>
+          <div class="dropdown-menu" style="margin-left: -207.95px;">
+            <div class="dropdown-inner">               <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_43">test 11 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_44">test 12 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_47">test 15 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_48">test 16 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_49">test 17 (0)</a></li>
+                              </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_50">test 18 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_51">test 19 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_52">test 20 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_53">test 21 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_54">test 22 (0)</a></li>
+                              </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_55">test 23 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_56">test 24 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_38">test 4 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_37">test 5 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_39">test 6 (0)</a></li>
+                              </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_40">test 7 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_41">test 8 (0)</a></li>
+                                <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34_42">test 9 (0)</a></li>
+                              </ul>
+              </div>
+            <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34" class="see-all">Show All MP3 Players</a> </div>
+        </li>
+                      </ul>
+    </div>
+  </nav>
+</div>
+ 
+
+<div id="product-category" class="container">
+  <ul class="breadcrumb">
+        <li><a href="http://opencart.abstracta.us:80/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
+        <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18">Laptops &amp; Notebooks</a></li>
+      </ul>
+  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> Success: You have added <a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;product_id=45">MacBook Pro</a> to your <a href="http://opencart.abstracta.us:80/index.php?route=checkout/cart">shopping cart</a>! <button type="button" class="close" data-dismiss="alert">×</button></div><div class="row"><aside id="column-left" class="col-sm-3 hidden-xs">
+    <div class="list-group">
+     <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=20" class="list-group-item">Desktops (13)</a>
+       
+  <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18" class="list-group-item active">Laptops &amp; Notebooks (5)</a> 
+       
+  <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_46" class="list-group-item">&nbsp;&nbsp;&nbsp;- Macs (0)</a>
+       
+  <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_45" class="list-group-item">&nbsp;&nbsp;&nbsp;- Windows (0)</a>
+             <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=25" class="list-group-item">Components (2)</a>
+       <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=57" class="list-group-item">Tablets (1)</a>
+       <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=17" class="list-group-item">Software (0)</a>
+       <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=24" class="list-group-item">Phones &amp; PDAs (3)</a>
+       <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=33" class="list-group-item">Cameras (2)</a>
+       <a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=34" class="list-group-item">MP3 Players (4)</a>
+    </div>
+
+    <div class="swiper-viewport">
+  <div id="banner0" class="swiper-container swiper-container-horizontal swiper-container-fade">
+    <div class="swiper-wrapper">      <div class="swiper-slide swiper-slide-active" style="width: 255px; opacity: 1; transform: translate3d(0px, 0px, 0px);"><a href="index.php?route=product/manufacturer/info&amp;manufacturer_id=7"><script data-pagespeed-no-defer="">//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://opencart.abstracta.us/index.php?route=product/category&path=18','8Xxa2XQLv9',true,false,'tGbGWCssAGM');
+//]]></script><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/compaq_presario-182x182.jpg" alt="HP Banner" class="img-responsive" data-pagespeed-url-hash="183590158" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">$('#banner0').swiper({effect:'fade',autoplay:2500,autoplayDisableOnInteraction:false});</script> 
+  </aside>
+
+                <div id="content" class="col-sm-9">
+      <h2>Laptops &amp; Notebooks</h2>
+            <div class="row">         <div class="col-sm-2"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/hp_2-80x80.jpg" alt="Laptops &amp; Notebooks" title="Laptops &amp; Notebooks" class="img-thumbnail" data-pagespeed-url-hash="2149851874" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+                        <div class="col-sm-10"><p>
+	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.</p>
+</div>
+        </div>
+      <hr>
+                  <h3>Refine Search</h3>
+            <div class="row">
+        <div class="col-sm-3">
+          <ul>
+                        <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_46">Macs (0)</a></li>
+                        <li><a href="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18_45">Windows (0)</a></li>
+                      </ul>
+        </div>
+      </div>
+                        <div class="row">
+        <div class="col-md-2 col-sm-6 hidden-xs">
+          <div class="btn-group btn-group-sm">
+            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="List"><i class="fa fa-th-list"></i></button>
+            <button type="button" id="grid-view" class="btn btn-default active" data-toggle="tooltip" title="" data-original-title="Grid"><i class="fa fa-th"></i></button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="form-group"><a href="http://opencart.abstracta.us:80/index.php?route=product/compare" id="compare-total" class="btn btn-link">Product Compare (0)</a></div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="form-group input-group input-group-sm">
+            <label class="input-group-addon" for="input-sort">Sort By:</label>
+            <select id="input-sort" class="form-control" onchange="location = this.value;">
+              
+              
+              
+                                          
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=p.sort_order&amp;order=ASC" selected="selected">Default</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=pd.name&amp;order=ASC">Name (A - Z)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=pd.name&amp;order=DESC">Name (Z - A)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=p.price&amp;order=ASC">Price (Low &gt; High)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=p.price&amp;order=DESC">Price (High &gt; Low)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=rating&amp;order=DESC">Rating (Highest)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=rating&amp;order=ASC">Rating (Lowest)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=p.model&amp;order=ASC">Model (A - Z)</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;sort=p.model&amp;order=DESC">Model (Z - A)</option>
+              
+              
+              
+                                        
+            
+            
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="form-group input-group input-group-sm">
+            <label class="input-group-addon" for="input-limit">Show:</label>
+            <select id="input-limit" class="form-control" onchange="location = this.value;">
+              
+              
+              
+                                          
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;limit=15" selected="selected">15</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;limit=25">25</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;limit=50">50</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;limit=75">75</option>
+              
+              
+              
+                                                        
+              
+              
+              <option value="http://opencart.abstracta.us:80/index.php?route=product/category&amp;path=18&amp;limit=100">100</option>
+              
+              
+              
+                                        
+            
+            
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">         <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=47"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/hp_1-228x228.jpg" alt="HP LP3065" title="HP LP3065" class="img-responsive" data-pagespeed-url-hash="1787037657" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+            <div>
+              <div class="caption">
+                <h4><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=47">HP LP3065</a></h4>
+                <p>Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..</p>
+                                <p class="price">                   $122.00
+                                     <span class="price-tax">Ex Tax: $100.00</span>  </p>
+                                 </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('47', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('47');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="compare.add('47');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=43"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/macbook_1-228x228.jpg" alt="MacBook" title="MacBook" class="img-responsive" data-pagespeed-url-hash="2555217731" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+            <div>
+              <div class="caption">
+                <h4><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=43">MacBook</a></h4>
+                <p>Intel Core 2 Duo processor
+	
+		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..</p>
+                                <p class="price">                   $602.00
+                                     <span class="price-tax">Ex Tax: $500.00</span>  </p>
+                                 </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('43', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="compare.add('43');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=44"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/macbook_air_1-228x228.jpg" alt="MacBook Air" title="MacBook Air" class="img-responsive" data-pagespeed-url-hash="1673355766" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+            <div>
+              <div class="caption">
+                <h4><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=44">MacBook Air</a></h4>
+                <p>MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose in..</p>
+                                <p class="price">                   $1,202.00
+                                     <span class="price-tax">Ex Tax: $1,000.00</span>  </p>
+                                 </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('44', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('44');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="compare.add('44');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=45"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/macbook_pro_1-228x228.jpg" alt="MacBook Pro" title="MacBook Pro" class="img-responsive" data-pagespeed-url-hash="4289483421" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+            <div>
+              <div class="caption">
+                <h4><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=45">MacBook Pro</a></h4>
+                <p>Latest Intel mobile architecture
+		
+			Powered by the most advanced mobile processors from Intel, ..</p>
+                                <p class="price">                   $2,000.00
+                                     <span class="price-tax">Ex Tax: $2,000.00</span>  </p>
+                                 </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('45', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('45');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="compare.add('45');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=46"><img src="http://opencart.abstracta.us:80/image/cache/catalog/demo/sony_vaio_1-228x228.jpg" alt="Sony VAIO" title="Sony VAIO" class="img-responsive" data-pagespeed-url-hash="3812790712" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+            <div>
+              <div class="caption">
+                <h4><a href="http://opencart.abstracta.us:80/index.php?route=product/product&amp;path=18&amp;product_id=46">Sony VAIO</a></h4>
+                <p>Unprecedented power. The next generation of processing technology has arrived. Built into the newest..</p>
+                                <p class="price">                   $1,202.00
+                                     <span class="price-tax">Ex Tax: $1,000.00</span>  </p>
+                                 </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('46', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('46');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="" onclick="compare.add('46');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+      <div class="row">
+        <div class="col-sm-6 text-left"></div>
+        <div class="col-sm-6 text-right">Showing 1 to 5 of 5 (1 Pages)</div>
+      </div>
+                  </div>
+    </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+            <div class="col-sm-3">
+        <h5>Information</h5>
+        <ul class="list-unstyled">
+                   <li><a href="http://opencart.abstracta.us:80/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+                    <li><a href="http://opencart.abstracta.us:80/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+                    <li><a href="http://opencart.abstracta.us:80/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+                    <li><a href="http://opencart.abstracta.us:80/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+                  </ul>
+      </div>
+            <div class="col-sm-3">
+        <h5>Customer Service</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://opencart.abstracta.us:80/index.php?route=information/contact">Contact Us</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/return/add">Returns</a></li>
+          <li><a href="http://opencart.abstracta.us:80/index.php?route=information/sitemap">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Extras</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://opencart.abstracta.us:80/index.php?route=product/manufacturer">Brands</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/voucher">Gift Certificates</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=affiliate/login">Affiliate</a></li>
+          <li><a href="http://opencart.abstracta.us:80/index.php?route=product/special">Specials</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>My Account</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/account">My Account</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/order">Order History</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/wishlist">Wish List</a></li>
+          <li><a href="https://opencart.abstracta.us:443/index.php?route=account/newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p>Powered By <a href="http://www.opencart.com">OpenCart</a><br> Your Store © 2023</p>
+  </div>
+</footer>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+  <div id="bitnami-banner" data-banner-id="d32a9">  <style>#bitnami-banner{z-index:100000;height:80px;padding:0;width:120px;background:transparent;position:fixed;right:0;bottom:0;border:0 solid #ededed}#bitnami-banner .bitnami-corner-image-div{position:fixed;right:0;bottom:0;border:0;z-index:100001;height:110px}#bitnami-banner .bitnami-corner-image-div .bitnami-corner-image{position:fixed;right:0;bottom:0;border:0;z-index:100001;height:110px}#bitnami-close-banner-button{height:12px;width:12px;z-index:10000000000;position:fixed;right:5px;bottom:65px;display:none;cursor:pointer}</style>  <img id="bitnami-close-banner-button" src="/bitnami/images/xclose.png.pagespeed.ic.zGNTK6uUsg.webp" data-pagespeed-url-hash="532604739" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">  <div class="bitnami-corner-image-div">     <a href="/bitnami/index.html" target="_blank">       <img class="bitnami-corner-image" alt="Bitnami" src="/bitnami/images/xcorner-logo.png.pagespeed.ic.IEIWilc-ea.webp" data-pagespeed-url-hash="2368760042" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">     </a>  </div>  <script type="text/javascript">//<![CDATA[
+(function(){var banner=document.getElementById("bitnami-banner");var closeButton=document.getElementById("bitnami-close-banner-button");var toggleCloseButton=function toggleCloseButton(open){if(closeButton){if(open&&banner&&banner.style.display!="none"){closeButton.style.display="block";}else{closeButton.style.display="none";}}return false;};var setCookie=function setCookie(cname,cvalue,exdays){var d=new Date();d.setTime(d.getTime()+(exdays*24*60*60*1000));var expires="expires="+d.toUTCString();document.cookie=cname+"="+cvalue+"; "+expires;};var closeBanner=function closeBanner(open){if(banner){var suffix=banner.getAttribute('data-banner-id')||'global';banner.style.display="none";setCookie('_bitnami_closed_banner_'+suffix,"1",30);}return false;};banner.onmouseover=function(){return toggleCloseButton(1);};banner.onmouseout=function(){return toggleCloseButton(0);};closeButton.onclick=closeBanner;}());
+//]]></script> </div>    
+</body></html>

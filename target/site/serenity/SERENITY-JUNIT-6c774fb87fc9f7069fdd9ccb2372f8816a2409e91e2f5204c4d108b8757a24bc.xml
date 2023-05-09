@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Agregar productos" skipped="0" tests="3" time="69.48" timestamp="2023-05-09 05:52:49"><testcase name="Agregar un producto al carrito"/><testcase name="Agregar dos producto al carrito"/><testcase name="Agregar varios producto al carrito"/></testsuite>

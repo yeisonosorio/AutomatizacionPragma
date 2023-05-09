@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="d3332a72a23c07f56290e3b79b31b488935677685d4f80dbf3a1314b3421147a.html">Agregar Productos</a></span>
+                > <span class="truncate-60"><a
+                    href="665990ff1428ee25b7ec50eb590df3f039332432168d347bb32a00f863a78ffa.html">Agregar dos producto al carrito </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-05-2023 17:53</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Agregar Productos </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuario de la pagina Your Store<br />
+quiero poder agregar productos al carrito<br />
+para poder comprar productos los productos de la página
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c565dc5c875dbdb96295030ae4917863b4289205bbd92ffc7a29e5e19813ea25.html">Agregar Dos Producto
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4501a2ff09b70a6cabfa3af4e8ee5ab899ba2eb4146abc6fabbb502e6de3684b.html">Prueba
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Agregar dos producto al carrito
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Given que el usuario ingresa a la pagina yourstore" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" User abrir pagina inicial" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" User opens the Pagina inicial page" width="1920"/>
+                <img src="ef20a590b1dc8627ca7a28f7910d6a8af92c344c2f0af1fe8b4ef4df934e61b2.png" title=" User opens the Pagina inicial page (completed)" width="1920"/>
+                <img src="ef20a590b1dc8627ca7a28f7910d6a8af92c344c2f0af1fe8b4ef4df934e61b2.png" title=" User abrir pagina inicial (completed)" width="1920"/>
+                <img src="ef20a590b1dc8627ca7a28f7910d6a8af92c344c2f0af1fe8b4ef4df934e61b2.png" title=" Given que el usuario ingresa a la pagina yourstore (completed)" width="1920"/>
+                <img src="82a12cd2ad5dbb8c8a6fb75f7c5661adfbe37cb0bce5721878c765284b5a270a.png" title=" Given el usuario esta en la seccion laptops de la pagina yourstore" width="1920"/>
+                <img src="82a12cd2ad5dbb8c8a6fb75f7c5661adfbe37cb0bce5721878c765284b5a270a.png" title=" User seccion laptops" width="1920"/>
+                <img src="82a12cd2ad5dbb8c8a6fb75f7c5661adfbe37cb0bce5721878c765284b5a270a.png" title=" User clicks on Boton elegir una pc mac" width="1920"/>
+                <img src="82a12cd2ad5dbb8c8a6fb75f7c5661adfbe37cb0bce5721878c765284b5a270a.png" title=" User clicks on Boton elegir una pc mac" width="1920"/>
+                <img src="acfac1f1b99fc97c6cc4e7b867cdd31961e4590203074c73d5a7d939bc94cb8f.png" title=" User clicks on Boton elegir una pc mac (completed)" width="1920"/>
+                <img src="acfac1f1b99fc97c6cc4e7b867cdd31961e4590203074c73d5a7d939bc94cb8f.png" title=" User seccion laptops (completed)" width="1920"/>
+                <img src="acfac1f1b99fc97c6cc4e7b867cdd31961e4590203074c73d5a7d939bc94cb8f.png" title=" Given el usuario esta en la seccion laptops de la pagina yourstore (completed)" width="1920"/>
+                <img src="93cb9f3364c50bd5ca701d791163806383cbb386848d012807ba4fea0169517c.png" title=" When agregar dos laptop al carrito de compras" width="1920"/>
+                <img src="93cb9f3364c50bd5ca701d791163806383cbb386848d012807ba4fea0169517c.png" title=" User agregar dos mac book" width="1920"/>
+                <img src="93cb9f3364c50bd5ca701d791163806383cbb386848d012807ba4fea0169517c.png" title=" User clicks on Seleccionar MackBook Air" width="1920"/>
+                <img src="8a79df8a141dba0fda4cffa94714cb7697d16b8caf776d680ee0cbdb52b2b2f6.png" title=" User clicks on Seleccionar MackBook Air (completed)" width="1920"/>
+                <img src="1c3d8f6c173da7a6e2b14797e68f168d91c414187ccbec3b265d17ecb1bc95ee.png" title=" User clicks on Seleccionar MackBook Pro" width="1920"/>
+                <img src="a004db11092c8d1d01560f6701257eb26c0fa495e6ef97f0ada953034c90d8f5.png" title=" User clicks on Seleccionar MackBook Pro (completed)" width="1920"/>
+                <img src="a004db11092c8d1d01560f6701257eb26c0fa495e6ef97f0ada953034c90d8f5.png" title=" User agregar dos mac book (completed)" width="1920"/>
+                <img src="a004db11092c8d1d01560f6701257eb26c0fa495e6ef97f0ada953034c90d8f5.png" title=" User ver carrito" width="1920"/>
+                <img src="4c8cd8847eef860969662a9a5cec226bdc122d7cdf26579fe1081448a9e69683.png" title=" User clicks on Boton ver el carrito de compras" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" User clicks on Boton ver el carrito de compras (completed)" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" User ver carrito (completed)" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" When agregar dos laptop al carrito de compras (completed)" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" Then el usuario debe ver el valor de los dos producto &quot;$3,202.00&quot;" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" Then validar precio should be '$3,202.00'" width="1920"/>
+                <img src="6f53d0df682294c8ffea300c1dbe11734b48ffed7df2c434006342a2e82ef201.png" title=" Then el usuario debe ver el valor de los dos producto &quot;$3,202.00&quot; (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>
