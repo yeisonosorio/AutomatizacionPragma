@@ -4,9 +4,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-import static com.pragma.ui.CaracteristicasCamaraPage.*;
+import static com.pragma.ui.CaracteristicasCamaraPage.CAMPO_ADD_CARRITO;
+import static com.pragma.ui.CaracteristicasCamaraPage.CAMPO_CANTIDAD;
 import static com.pragma.ui.CaracteristicasPortatilHp.BOTON_CALENDARIO;
 import static com.pragma.ui.CaracteristicasPortatilHp.BOTON_DIA;
 
@@ -17,7 +17,7 @@ public class CaracteristicasPortatilHp implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(BOTON_CALENDARIO),
-                SelectFromOptions.byValue("16").from(BOTON_DIA),
+                Click.on(BOTON_DIA),
                 Enter.theValue("1").into(CAMPO_CANTIDAD),
                 Click.on(CAMPO_ADD_CARRITO)
 

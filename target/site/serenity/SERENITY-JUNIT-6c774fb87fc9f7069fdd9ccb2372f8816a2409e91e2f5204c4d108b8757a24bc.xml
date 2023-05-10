@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Agregar productos" skipped="0" tests="6" time="340.8" timestamp="2023-05-10 12:01:24"><testcase name="Agregar un producto al carrito"/><testcase name="Agregar dos producto al carrito"/><testcase name="Agregar varios producto al carrito"><failure message="&#10;Expected: &quot;$943.98&quot;&#10;     but: was &quot;&quot;" type="java.lang.AssertionError">
-Expected: "$943.98"
-     but: was ""</failure><system-err>
-Expected: "$943.98"
-     but: was ""&#13;
-com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDeTodosLosProducto(AgregarProductosStepDefinitions.java:177)&#13;
-✽.el usuario debe ver el valor de todos los producto "$943.98"(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:28)&#13;
-</system-err></testcase><testcase name="Agregar 10 Camara Cannon EOS Azul"/><testcase name="Agregar portatil hp con fecha de entrega"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-com.pragma.tasks.CaracteristicasPortatilHp.performAs(CaracteristicasPortatilHp.java:18)&#13;
-com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioAgregaUnPortatilHpCarritoDeComprasConUnaFechaDeEntrega(AgregarProductosStepDefinitions.java:257)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="1" name="Agregar productos" skipped="0" tests="6" time="183.85" timestamp="2023-05-10 12:36:03"><testcase name="Agregar un producto al carrito"/><testcase name="Agregar dos producto al carrito"/><testcase name="Agregar varios producto al carrito"/><testcase name="Agregar 10 Camara Cannon EOS Azul"><error message="element click intercepted: Element &lt;span id=&quot;cart-total&quot;&gt;...&lt;/span&gt; is not clickable at point (1171, 8). Other element would receive the click: &lt;div id=&quot;top-links&quot; class=&quot;nav pull-right&quot;&gt;...&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=113.0.1774.35)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61968}, msedge: {msedgedriverVersion: 113.0.1774.35 (7069649d6056..., userDataDir: C:\Users\jeiso\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9bae0ece2b8b22cb9db04d3713246eb9" type="org.openqa.selenium.ElementClickInterceptedException">element click intercepted: Element &lt;span id="cart-total"&gt;...&lt;/span&gt; is not clickable at point (1171, 8). Other element would receive the click: &lt;div id="top-links" class="nav pull-right"&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=113.0.1774.35)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61968}, msedge: {msedgedriverVersion: 113.0.1774.35 (7069649d6056..., userDataDir: C:\Users\jeiso\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bae0ece2b8b22cb9db04d3713246eb9</error><system-err>element click intercepted: Element &lt;span id="cart-total"&gt;...&lt;/span&gt; is not clickable at point (1171, 8). Other element would receive the click: &lt;div id="top-links" class="nav pull-right"&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=113.0.1774.35)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61968}, msedge: {msedgedriverVersion: 113.0.1774.35 (7069649d6056..., userDataDir: C:\Users\jeiso\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bae0ece2b8b22cb9db04d3713246eb9&#13;
+com.pragma.tasks.VerCarrito.performAs(VerCarrito.java:14)&#13;
+com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioAgregaDiezCamaraAlCarritoDeCompras(AgregarProductosStepDefinitions.java:206)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:27)&#13;
 io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)&#13;
 io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
@@ -22,11 +27,11 @@ io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:22
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
-</system-err></testcase><testcase name="Agregar producto 8"><failure message="&#10;Expected: &quot;$1,114.00&quot;&#10;     but: was &quot;$134.00&quot;" type="java.lang.AssertionError">
-Expected: "$1,114.00"
-     but: was "$134.00"</failure><system-err>
-Expected: "$1,114.00"
-     but: was "$134.00"&#13;
-com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDelProducto8(AgregarProductosStepDefinitions.java:321)&#13;
-✽.el usuario debe ver el valor del producto8 "$1,114.00"(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:49)&#13;
-</system-err></testcase></testsuite>
+</system-err></testcase><testcase name="Agregar portatil hp con fecha de entrega"><failure message="&#10;Expected: &quot;$100.00&quot;&#10;     but: was &quot;$122.00&quot;" type="java.lang.AssertionError">
+Expected: "$100.00"
+     but: was "$122.00"</failure><system-err>
+Expected: "$100.00"
+     but: was "$122.00"&#13;
+com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDelPortatil(AgregarProductosStepDefinitions.java:269)&#13;
+✽.el usuario debe ver el valor del portatil "$100.00"(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:42)&#13;
+</system-err></testcase><testcase name="Agregar producto 8"/></testsuite>
