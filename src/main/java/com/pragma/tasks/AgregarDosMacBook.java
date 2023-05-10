@@ -7,7 +7,6 @@ import net.serenitybdd.screenplay.actions.Scroll;
 
 import static com.pragma.ui.AgregarDosMacPage.EQUIPO_MAC1;
 import static com.pragma.ui.AgregarDosMacPage.EQUIPO_MAC2;
-import static com.pragma.ui.ProductoMacBookPage.BOTON_MAC;
 
 public class AgregarDosMacBook implements Task {
 

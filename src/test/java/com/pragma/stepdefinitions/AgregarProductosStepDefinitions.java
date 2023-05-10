@@ -8,11 +8,13 @@ import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 
 import static com.pragma.questions.ValidarPrecio.validarPrecio;
+import static com.pragma.tasks.AgregarCamara.agregarCamara;
 import static com.pragma.tasks.AgregarComponents.agregarComponents;
 import static com.pragma.tasks.AgregarDosMacBook.agregarDosMacBook;
 import static com.pragma.tasks.AgregarMP3.agregarMP3;
 import static com.pragma.tasks.AgregarPhones.agregarPhones;
 import static com.pragma.tasks.AgregarTablet.agregarTablet;
+import static com.pragma.tasks.CaracteristicasCamara.CaracteristicasCamara;
 import static com.pragma.tasks.ProductoMacBook.productoMacBook;
 import static com.pragma.tasks.SeccionLaptops.seccionLaptops;
 import static com.pragma.tasks.VerCarrito.verCarrito;
@@ -41,6 +43,9 @@ public class AgregarProductosStepDefinitions extends Configuracion {
     }
 
 
+    /**
+     * Primer Escenario
+     */
     @Given("el usuario esta en la seccion laptops de la pagina")
     public void elUsuarioEstaEnLaSeccionLaptopsDeLaPagina() {
         try {
@@ -85,6 +90,9 @@ public class AgregarProductosStepDefinitions extends Configuracion {
     }
 
 
+    /**
+     * Segundo Escenario
+     */
     @Given("el usuario esta en la seccion laptops de la pagina yourstore")
     public void elUsuarioEstaEnLaSeccionLaptopsDeLaPaginaYourstore() {
         try {
@@ -126,6 +134,10 @@ public class AgregarProductosStepDefinitions extends Configuracion {
         }
     }
 
+
+    /**
+     * Tercer Escenario
+     */
 
     @Given("el usuario esta en la pagina yourstore")
     public void elUsuarioEstaEnLaPaginaYourstore() {
@@ -171,6 +183,79 @@ public class AgregarProductosStepDefinitions extends Configuracion {
             quitarDriver();
         }
     }
+
+
+    /***
+     *  Cuarto Scenario
+     */
+    @Given("el usuario esta en la home yourstore con el navegador  {string}")
+    public void elUsuarioEstaEnLaHomeYourstoreConElNavegador(String SeleccionNavegador) {
+        try {
+            generalSetup(SeleccionNavegador);
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo la configuracion inicial");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
+    }
+
+    @When("el usuario agrega diez camara al carrito de compras")
+    public void elUsuarioAgregaDiezCamaraAlCarritoDeCompras() {
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    agregarCamara(),
+                    CaracteristicasCamara(),
+                    verCarrito()
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de agregar producto al carrito");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
+    }
+
+    @Then("el usuario debe ver el valor de las diez camaras {string}")
+    public void elUsuarioDebeVerElValorDeLasDiezCamaras(String mensaje) {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(validarPrecio(), equalTo(mensaje))
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de validacion del precio del producto");
+            LOGGER.warn(e.getMessage());
+        } finally {
+            quitarDriver();
+        }
+    }
+    @Given("el usuario esta en la home yourstore,  busca el producto con el navegador {string}")
+    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProductoConElNavegador(String string) {
+
+    }
+
+    @When("el usuario agrega un portatil hp carrito de compras con una fecha de entrega")
+    public void elUsuarioAgregaUnPortatilHpCarritoDeComprasConUnaFechaDeEntrega() {
+
+    }
+
+    @Then("el usuario debe ver el valor del portatil {string}")
+    public void elUsuarioDebeVerElValorDelPortatil(String string) {
+
+    }
+
+    @Given("el usuario esta en la home yourstore,  busca el producto8 con el navegador {string}")
+    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProducto8ConElNavegador(String string) {
+
+    }
+
+    @When("el usuario agrega el producto8 con un tamanio medio al carrito de compras")
+    public void elUsuarioAgregaElProducto8ConUnTamanioMedioAlCarritoDeCompras() {
+       
+    }
+
+
 
 
 }

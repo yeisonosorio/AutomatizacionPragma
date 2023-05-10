@@ -2,9 +2,46 @@
 <testsuite name="com.pragma.runners.RunnerTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-BTHGFUF" time="0.0">
   <properties/>
   <system-out><![CDATA[
-3 Scenarios (?[32m3 passed?[0m)
-12 Steps (?[32m12 passed?[0m)
-1m12,859s
+?[33mUndefined scenarios:?[0m
+?[33mfile:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:44?[0m# Agregar portatil hp con fecha de entrega
+?[33mfile:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:52?[0m# Agregar producto 8
+
+6 Scenarios (?[33m2 undefined?[0m, ?[32m4 passed?[0m)
+24 Steps (?[33m6 undefined?[0m, ?[32m18 passed?[0m)
+2m40,932s
+
+
+You can implement missing steps with the snippets below:
+
+@Given("el usuario esta en la home yourstore,  busca el producto con el navegador {string}")
+public void elUsuarioEstaEnLaHomeYourstoreBuscaElProductoConElNavegador(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el usuario agrega un portatil hp carrito de compras con una fecha de entrega")
+public void elUsuarioAgregaUnPortatilHpCarritoDeComprasConUnaFechaDeEntrega() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("el usuario debe ver el valor del portatil {string}")
+public void elUsuarioDebeVerElValorDelPortatil(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("el usuario esta en la home yourstore,  busca el producto8 con el navegador {string}")
+public void elUsuarioEstaEnLaHomeYourstoreBuscaElProducto8ConElNavegador(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el usuario agrega el producto8 con un tamanio medio al carrito de compras")
+public void elUsuarioAgregaElProducto8ConUnTamanioMedioAlCarritoDeCompras() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
 
 
 ]]></system-out>
