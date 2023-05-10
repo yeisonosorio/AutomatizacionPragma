@@ -5,12 +5,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 
-import static com.pragma.ui.AgregarDosMacPage.EQUIPO_MAC1;
 import static com.pragma.ui.AgregarMP3Page.BOTON_ADD_MP3;
-import static com.pragma.ui.AgregarPhonesPage.BOTON_ADD_CELULAR;
 import static com.pragma.ui.SeccionMP3Page.BOTON_MP3;
 import static com.pragma.ui.SeccionMP3Page.BOTON_SHOW_ALL;
-import static com.pragma.ui.SeccionPhonesPage.BOTON_PHONES;
 
 public class AgregarMP3 implements Task {
 

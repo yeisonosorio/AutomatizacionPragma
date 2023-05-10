@@ -6,9 +6,6 @@ Feature: Agregar productos
   quiero poder agregar productos al carrito
   para poder comprar productos los productos de la página
 
-  Background:
-    Given  que el usuario ingresa a la pagina yourstore
-
 
   @AgregarUnProducto
   Scenario: Agregar un producto al carrito
@@ -31,13 +28,11 @@ Feature: Agregar productos
     Then  el usuario debe ver el valor de todos los producto "$943.98"
 
 
-
   @Agregar10CamarasAzules
   Scenario: Agregar 10 Camara Cannon EOS Azul
     Given el usuario esta en la home yourstore con el navegador  "Edge"
     When el usuario agrega diez camara al carrito de compras
     Then  el usuario debe ver el valor de las diez camaras "$980.00"
-
 
 
   @AgregarPortatilHP
@@ -47,10 +42,9 @@ Feature: Agregar productos
     Then  el usuario debe ver el valor del portatil "$100.00"
 
 
-
   @AgregarProducto8
   Scenario: Agregar producto 8
     Given el usuario esta en la home yourstore,  busca el producto8 con el navegador "Edge"
     When el usuario agrega el producto8 con un tamanio medio al carrito de compras
-    Then  el usuario debe ver el valor del portatil "$1,114.00"
+    Then  el usuario debe ver el valor del producto8 "$1,114.00"
 

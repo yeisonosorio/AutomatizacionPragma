@@ -1,115 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Agregar productos" tests="6" skipped="2" failures="0" errors="0" timestamp="2023-05-10T01:57:42" hostname="DESKTOP-BTHGFUF" time="160.554">
+<testsuite name="Agregar productos" tests="6" skipped="0" failures="2" errors="0" timestamp="2023-05-10T05:01:24" hostname="DESKTOP-BTHGFUF" time="349.279">
   <properties/>
-  <testcase name="Agregar un producto al carrito" classname="Agregar productos" time="57.373"/>
-  <testcase name="Agregar dos producto al carrito" classname="Agregar productos" time="19.454"/>
-  <testcase name="Agregar varios producto al carrito" classname="Agregar productos" time="28.015"/>
-  <testcase name="Agregar 10 Camara Cannon EOS Azul" classname="Agregar productos" time="50.087"/>
-  <testcase name="Agregar portatil hp con fecha de entrega" classname="Agregar productos" time="3.348">
-    <skipped/>
+  <testcase name="Agregar un producto al carrito" classname="Agregar productos" time="154.903"/>
+  <testcase name="Agregar dos producto al carrito" classname="Agregar productos" time="19.33"/>
+  <testcase name="Agregar varios producto al carrito" classname="Agregar productos" time="23.752">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;$943.98&quot;&#10;     but: was &quot;&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;$943.98&quot;
+     but: was &quot;&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDeTodosLosProducto(AgregarProductosStepDefinitions.java:177)
+	at ✽.el usuario debe ver el valor de todos los producto &quot;$943.98&quot;(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:28)
+</failure>
   </testcase>
-  <testcase name="Agregar producto 8" classname="Agregar productos" time="2.277">
-    <skipped/>
+  <testcase name="Agregar 10 Camara Cannon EOS Azul" classname="Agregar productos" time="43.195"/>
+  <testcase name="Agregar portatil hp con fecha de entrega" classname="Agregar productos" time="80.902"/>
+  <testcase name="Agregar producto 8" classname="Agregar productos" time="27.197">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;$1,114.00&quot;&#10;     but: was &quot;$134.00&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;$1,114.00&quot;
+     but: was &quot;$134.00&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDelProducto8(AgregarProductosStepDefinitions.java:321)
+	at ✽.el usuario debe ver el valor del producto8 &quot;$1,114.00&quot;(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:49)
+</failure>
   </testcase>
-  <system-out><![CDATA[2023-05-09 20:59:32 INFO  AgregarProductosStepDefinitions:39 fallo la configuracion inicial
-2023-05-09 20:59:32 WARN  AgregarProductosStepDefinitions:40 Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver
-2023-05-09 21:00:20 INFO  AgregarProductosStepDefinitions:39 fallo la configuracion inicial
-2023-05-09 21:00:20 WARN  AgregarProductosStepDefinitions:40 Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver
-2023-05-09 21:00:22 INFO  AgregarProductosStepDefinitions:39 fallo la configuracion inicial
-2023-05-09 21:00:22 WARN  AgregarProductosStepDefinitions:40 Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver
+  <system-out><![CDATA[2023-05-10 00:06:43 INFO  AgregarProductosStepDefinitions:263 fallo el proceso de agregar producto al carrito
+2023-05-10 00:06:43 WARN  AgregarProductosStepDefinitions:264 Expected enabled element was not enabled
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5152
+  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 46165
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:57:46 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:01:30 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 09, 2023 8:57:46 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 12:01:31 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 36009
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 3538
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:57:55 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:01:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1683683892.784][SEVERE]: Timed out receiving message from renderer: 10.000
-[1683683892.784][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1683683902.835][SEVERE]: Timed out receiving message from renderer: 10.000
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 23779
+[1683694916.113][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694916.113][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1683694926.115][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694936.129][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694936.129][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1683694946.134][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694956.142][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694956.143][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1683694966.155][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694977.102][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694977.102][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1683694987.115][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694997.123][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683694997.123][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1683695007.135][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683695017.139][SEVERE]: Timed out receiving message from renderer: 10.000
+[1683695017.139][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 48739
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:58:43 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:02 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 09, 2023 8:58:43 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 12:04:02 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 30413
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35815
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:58:46 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:05 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 26102
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 30744
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:59:01 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:19 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 09, 2023 8:59:01 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 12:04:19 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 44580
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 41108
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:59:02 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:22 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 41756
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-may. 09, 2023 8:59:08 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 27223
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-may. 09, 2023 8:59:32 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 11365
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 48698
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-may. 09, 2023 8:59:48 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:52 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 9495
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 15094
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 8:59:51 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:04:54 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5494
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 34729
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+may. 10, 2023 12:05:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 20815
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 9:00:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:05:30 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 41774
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 15979
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+may. 10, 2023 12:06:50 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 12549
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 09, 2023 9:00:22 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 12:06:56 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

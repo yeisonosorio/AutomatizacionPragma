@@ -14,7 +14,11 @@ import static com.pragma.tasks.AgregarDosMacBook.agregarDosMacBook;
 import static com.pragma.tasks.AgregarMP3.agregarMP3;
 import static com.pragma.tasks.AgregarPhones.agregarPhones;
 import static com.pragma.tasks.AgregarTablet.agregarTablet;
-import static com.pragma.tasks.CaracteristicasCamara.CaracteristicasCamara;
+import static com.pragma.tasks.BuscarProducto8.buscarProducto8;
+import static com.pragma.tasks.BuscarProductoPortatilHp.buscarProductoPortatilHp;
+import static com.pragma.tasks.CaracteristicasCamara.caracteristicasCamara;
+import static com.pragma.tasks.CaracteristicasPortatilHp.caracteristicasPortatilHp;
+import static com.pragma.tasks.CaracteristicasProducto8.caracteristicasProducto8;
 import static com.pragma.tasks.ProductoMacBook.productoMacBook;
 import static com.pragma.tasks.SeccionLaptops.seccionLaptops;
 import static com.pragma.tasks.VerCarrito.verCarrito;
@@ -28,27 +32,17 @@ public class AgregarProductosStepDefinitions extends Configuracion {
     public static Logger LOGGER = Logger.getLogger(AgregarProductosStepDefinitions.class);
 
 
-    @Given("que el usuario ingresa a la pagina yourstore")
-    public void queElUsuarioIngresaALaPaginaYourstore() {
-        try {
-            configurarNavegador();
-            theActorInTheSpotlight().wasAbleTo(
-                    new AbrirPaginaInicial()
-            );
-        } catch (Exception e) {
-            LOGGER.info("fallo la configuracion inicial");
-            LOGGER.warn(e.getMessage());
-            quitarDriver();
-        }
-    }
-
-
     /**
      * Primer Escenario
      */
     @Given("el usuario esta en la seccion laptops de la pagina")
     public void elUsuarioEstaEnLaSeccionLaptopsDeLaPagina() {
         try {
+            configurarNavegador();
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+            );
+
             theActorInTheSpotlight().wasAbleTo(
                     seccionLaptops()
             );
@@ -96,6 +90,10 @@ public class AgregarProductosStepDefinitions extends Configuracion {
     @Given("el usuario esta en la seccion laptops de la pagina yourstore")
     public void elUsuarioEstaEnLaSeccionLaptopsDeLaPaginaYourstore() {
         try {
+            configurarNavegador();
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+            );
             theActorInTheSpotlight().wasAbleTo(
                     seccionLaptops()
             );
@@ -186,7 +184,7 @@ public class AgregarProductosStepDefinitions extends Configuracion {
 
 
     /***
-     *  Cuarto Scenario
+     *  Cuarto Escenario
      */
     @Given("el usuario esta en la home yourstore con el navegador  {string}")
     public void elUsuarioEstaEnLaHomeYourstoreConElNavegador(String SeleccionNavegador) {
@@ -207,7 +205,7 @@ public class AgregarProductosStepDefinitions extends Configuracion {
         try {
             theActorInTheSpotlight().attemptsTo(
                     agregarCamara(),
-                    CaracteristicasCamara(),
+                    caracteristicasCamara(),
                     verCarrito()
             );
         } catch (Exception e) {
@@ -230,32 +228,103 @@ public class AgregarProductosStepDefinitions extends Configuracion {
             quitarDriver();
         }
     }
-    @Given("el usuario esta en la home yourstore,  busca el producto con el navegador {string}")
-    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProductoConElNavegador(String string) {
 
+
+    /**
+     * Quinto Escenario
+     */
+    @Given("el usuario esta en la home yourstore,  busca el producto con el navegador {string}")
+    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProductoConElNavegador(String SeleccionNavegador) {
+        try {
+            generalSetup(SeleccionNavegador);
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo la configuracion inicial");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
     }
+
 
     @When("el usuario agrega un portatil hp carrito de compras con una fecha de entrega")
     public void elUsuarioAgregaUnPortatilHpCarritoDeComprasConUnaFechaDeEntrega() {
-
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    buscarProductoPortatilHp(),
+                    caracteristicasPortatilHp(),
+                    verCarrito()
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de agregar producto al carrito");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
     }
 
     @Then("el usuario debe ver el valor del portatil {string}")
-    public void elUsuarioDebeVerElValorDelPortatil(String string) {
-
+    public void elUsuarioDebeVerElValorDelPortatil(String mensaje) {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(validarPrecio(), equalTo(mensaje))
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de validacion del precio del producto");
+            LOGGER.warn(e.getMessage());
+        } finally {
+            quitarDriver();
+        }
     }
 
-    @Given("el usuario esta en la home yourstore,  busca el producto8 con el navegador {string}")
-    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProducto8ConElNavegador(String string) {
 
+    /**
+     * Sexto Escenario
+     */
+    @Given("el usuario esta en la home yourstore,  busca el producto8 con el navegador {string}")
+    public void elUsuarioEstaEnLaHomeYourstoreBuscaElProducto8ConElNavegador(String SeleccionNavegador) {
+        try {
+            generalSetup(SeleccionNavegador);
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+
+
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo la configuracion inicial");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
     }
 
     @When("el usuario agrega el producto8 con un tamanio medio al carrito de compras")
     public void elUsuarioAgregaElProducto8ConUnTamanioMedioAlCarritoDeCompras() {
-       
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    buscarProducto8(),
+                    caracteristicasProducto8(),
+                    verCarrito()
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de agregar producto al carrito");
+            LOGGER.warn(e.getMessage());
+            quitarDriver();
+        }
     }
 
-
+    @Then("el usuario debe ver el valor del producto8 {string}")
+    public void elUsuarioDebeVerElValorDelProducto8(String mensaje) {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(validarPrecio(), equalTo(mensaje))
+            );
+        } catch (Exception e) {
+            LOGGER.info("fallo el proceso de validacion del precio del producto");
+            LOGGER.warn(e.getMessage());
+        } finally {
+            quitarDriver();
+        }
+    }
 
 
 }
