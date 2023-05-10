@@ -1,117 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Agregar productos" tests="6" skipped="0" failures="1" errors="0" timestamp="2023-05-10T05:36:03" hostname="DESKTOP-BTHGFUF" time="193.772">
+<testsuite name="Agregar productos" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-05-10T22:59:12" hostname="DESKTOP-BTHGFUF" time="234.638">
   <properties/>
-  <testcase name="Agregar un producto al carrito" classname="Agregar productos" time="42.228"/>
-  <testcase name="Agregar dos producto al carrito" classname="Agregar productos" time="17.96"/>
-  <testcase name="Agregar varios producto al carrito" classname="Agregar productos" time="25.169"/>
-  <testcase name="Agregar 10 Camara Cannon EOS Azul" classname="Agregar productos" time="52.011"/>
-  <testcase name="Agregar portatil hp con fecha de entrega" classname="Agregar productos" time="32.07">
-    <failure message="java.lang.AssertionError: &#10;Expected: &quot;$100.00&quot;&#10;     but: was &quot;$122.00&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &quot;$100.00&quot;
-     but: was &quot;$122.00&quot;
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at com.pragma.stepdefinitions.AgregarProductosStepDefinitions.elUsuarioDebeVerElValorDelPortatil(AgregarProductosStepDefinitions.java:269)
-	at ✽.el usuario debe ver el valor del portatil &quot;$100.00&quot;(file:///C:/Users/jeiso/OneDrive/Escritorio/PruebaPragma/AutomatizacionPragma/src/test/resources/features/agregarproductos.feature:42)
-</failure>
-  </testcase>
-  <testcase name="Agregar producto 8" classname="Agregar productos" time="24.334"/>
-  <system-out><![CDATA[2023-05-10 00:38:16 INFO  AgregarProductosStepDefinitions:212 fallo el proceso de agregar producto al carrito
-2023-05-10 00:38:16 WARN  AgregarProductosStepDefinitions:213 element click intercepted: Element <span id="cart-total">...</span> is not clickable at point (1171, 8). Other element would receive the click: <div id="top-links" class="nav pull-right">...</div>
-  (Session info: MicrosoftEdge=113.0.1774.35)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BTHGFUF', ip: '172.19.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61968}, msedge: {msedgedriverVersion: 113.0.1774.35 (7069649d6056..., userDataDir: C:\Users\jeiso\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9bae0ece2b8b22cb9db04d3713246eb9
-]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 19357
+  <testcase name="Agregar un producto al carrito" classname="Agregar productos" time="51.996"/>
+  <testcase name="Agregar dos producto al carrito" classname="Agregar productos" time="26.592"/>
+  <testcase name="Agregar varios producto al carrito" classname="Agregar productos" time="33.785"/>
+  <testcase name="Agregar 10 Camara Cannon EOS Azul" classname="Agregar productos" time="58.453"/>
+  <testcase name="Agregar portatil hp con fecha de entrega" classname="Agregar productos" time="34.407"/>
+  <testcase name="Agregar producto 8" classname="Agregar productos" time="29.405"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 29131
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:36:07 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 5:59:18 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 10, 2023 12:36:07 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 5:59:22 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 6475
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 16106
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:36:15 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 5:59:30 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 11585
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 6839
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:36:48 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:00:10 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 10, 2023 12:36:48 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 6:00:10 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 1050
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 27732
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:36:50 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:00:14 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 7238
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 48810
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:37:05 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:00:32 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-may. 10, 2023 12:37:05 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+may. 10, 2023 6:00:32 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 17756
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 15280
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:37:08 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:00:36 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 35980
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 48082
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-may. 10, 2023 12:37:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:01:19 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 41720
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 22693
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:37:44 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:01:21 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 34054
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 22616
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-may. 10, 2023 12:38:25 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:02:08 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 8643
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 31714
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:38:35 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:02:16 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 2663
+Starting Microsoft Edge WebDriver 113.0.1774.35 (7069649d605643a097c48b2aca67b600bc362a4f) on port 36857
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-may. 10, 2023 12:38:55 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:02:40 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 17550
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 15382
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may. 10, 2023 12:39:00 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+may. 10, 2023 6:02:45 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

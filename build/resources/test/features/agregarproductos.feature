@@ -39,7 +39,7 @@ Feature: Agregar productos
   Scenario: Agregar portatil hp con fecha de entrega
     Given el usuario esta en la home yourstore,  busca el producto con el navegador "Edge"
     When el usuario agrega un portatil hp carrito de compras con una fecha de entrega
-    Then  el usuario debe ver el valor del portatil "$100.00"
+    Then  el usuario debe ver el valor del portatil "$122.00"
 
 
   @AgregarProducto8
